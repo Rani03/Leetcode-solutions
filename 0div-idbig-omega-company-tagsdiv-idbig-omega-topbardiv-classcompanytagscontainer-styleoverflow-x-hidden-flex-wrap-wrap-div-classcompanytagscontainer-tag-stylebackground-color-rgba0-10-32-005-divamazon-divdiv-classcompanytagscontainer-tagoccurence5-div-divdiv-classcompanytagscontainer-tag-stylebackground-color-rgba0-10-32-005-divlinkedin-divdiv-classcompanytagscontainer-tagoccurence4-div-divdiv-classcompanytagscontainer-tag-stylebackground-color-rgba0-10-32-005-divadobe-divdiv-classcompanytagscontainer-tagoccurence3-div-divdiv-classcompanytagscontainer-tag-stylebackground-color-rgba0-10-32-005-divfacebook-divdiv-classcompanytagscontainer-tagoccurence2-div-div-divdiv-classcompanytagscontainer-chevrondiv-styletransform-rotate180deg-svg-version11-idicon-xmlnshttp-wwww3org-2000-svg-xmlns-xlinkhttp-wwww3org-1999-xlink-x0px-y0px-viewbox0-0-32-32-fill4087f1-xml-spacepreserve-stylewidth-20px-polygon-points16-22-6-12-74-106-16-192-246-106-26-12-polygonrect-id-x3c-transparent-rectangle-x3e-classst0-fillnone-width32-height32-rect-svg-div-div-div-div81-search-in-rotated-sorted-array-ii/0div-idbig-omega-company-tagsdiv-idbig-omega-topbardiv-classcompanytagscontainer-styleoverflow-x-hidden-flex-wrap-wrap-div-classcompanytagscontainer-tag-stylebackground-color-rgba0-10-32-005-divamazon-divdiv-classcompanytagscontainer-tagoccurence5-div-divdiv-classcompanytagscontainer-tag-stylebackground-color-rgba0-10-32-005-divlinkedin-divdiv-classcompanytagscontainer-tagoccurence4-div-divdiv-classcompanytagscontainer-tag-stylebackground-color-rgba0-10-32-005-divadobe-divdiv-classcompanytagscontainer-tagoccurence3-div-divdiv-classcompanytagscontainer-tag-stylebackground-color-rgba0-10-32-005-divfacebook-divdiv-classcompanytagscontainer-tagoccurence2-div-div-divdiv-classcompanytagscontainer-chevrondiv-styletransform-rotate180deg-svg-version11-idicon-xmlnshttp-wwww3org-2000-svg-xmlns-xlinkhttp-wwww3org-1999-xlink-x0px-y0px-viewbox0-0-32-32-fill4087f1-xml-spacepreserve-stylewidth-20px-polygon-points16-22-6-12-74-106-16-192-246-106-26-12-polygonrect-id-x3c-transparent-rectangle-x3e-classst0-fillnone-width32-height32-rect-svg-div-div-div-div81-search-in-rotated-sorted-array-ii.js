@@ -12,7 +12,7 @@ var search = function(nums, target) {
     const mid = Math.floor((left + right) / 2);
 
     if (nums[mid] === target) {
-      return true; // Found the target element
+      return true; // Found the target element then return true instead of the index.
     }
       //if we have dublicates (this portion is extra from the question number 33)
       if(nums[left]===nums[mid] && nums[mid]===nums[right])
